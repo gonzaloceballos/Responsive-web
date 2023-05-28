@@ -58,18 +58,77 @@ p {
 }
 
 .carousel-inner div img {
-    width: 50%;
+    width: 60%;
 }
 
 /*Productos*/
-.grid-container {
+.encabezado-productos {
+    padding: 10px;
+}
+
+.encabezado-productos h1 {
+    font-family: 'Montserrat-encabezados';
+    justify-content: center;
+}
+
+.container-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    grid-area: auto;
+    gap: 1rem;
+    padding: 10px;
 }
 
-.grid-container div img {
+.item figure img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.producto button {
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+
+}
+
+.comprar {
+    text-decoration: none;
 }
 
 /*Footer*/
@@ -141,6 +200,13 @@ p {
     .Section-footer p {
         font-size: small;
     }
+
+    .container-items {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-area: auto;
+    }
+
 }
 
 /*Tablet*/
@@ -161,6 +227,12 @@ p {
     .Logo-nav {
         width: 45%;
         margin: 5%;
+    }
+
+    .container-items {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-area: auto;
     }
 }
 
@@ -184,5 +256,11 @@ p {
     .Section-footer-img div img {
         width: 30%;
     }
+
+    .carousel-inner div img {
+        width: 60%;
+    }
+
+
 
 }
