@@ -131,10 +131,27 @@ p {
     text-decoration: none;
 }
 
+/*Contacto*/
+.h1-contacto {
+    font-family: 'Montserrat-encabezados';
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.seccion-mapa {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.info-contacto {
+    float: right;
+}
+
 /*Footer*/
 .footer {
     background-color: white;
 }
+
 
 .Section-footer {
     font-family: 'Montserrat-parrafos';
