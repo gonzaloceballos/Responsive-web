@@ -135,16 +135,28 @@ p {
 .h1-contacto {
     font-family: 'Montserrat-encabezados';
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 .seccion-mapa {
-    display: flex;
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "a a b"
+        "a a b";
+}
+
+.mapa {
+    grid-area: "b";
+    padding-left: 10px;
+    margin: 0;
 }
 
 .info-contacto {
-    float: right;
+    grid-area: "a";
+    padding: 10px;
+    margin: 0;
+    font-family: 'Montserrat-parrafos';
 }
 
 /*Footer*/
@@ -224,6 +236,22 @@ p {
         grid-area: auto;
     }
 
+    .seccion-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa {
+        margin: 5px;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-contacto {
+        text-align: center;
+    }
 }
 
 /*Tablet*/
@@ -250,6 +278,23 @@ p {
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-area: auto;
+    }
+
+    .seccion-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa {
+        margin: 5px;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-contacto {
+        text-align: center;
     }
 }
 
