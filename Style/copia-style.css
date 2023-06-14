@@ -1,0 +1,328 @@
+/*Encabezados*/
+@font-face {
+    font-family: 'Montserrat-encabezados';
+    src: url(./Montserrat/Montserrat-BlackItalic.ttf);
+}
+
+/*Parrafos*/
+@font-face {
+    font-family: 'Montserrat-parrafos';
+    src: url(./Montserrat/Montserrat-Italic.ttf);
+}
+
+/*Main*/
+main {
+    background-color: #ff0000;
+    padding-top: 20px;
+    border-top: 3px solid black;
+}
+
+h1 {
+    font-family: 'Montserrat-encabezados';
+    text-align: center;
+    text-justify: distribute;
+    text-size-adjust: 30px;
+}
+
+p {
+    font-family: 'Montserrat-parrafos';
+    text-align: center;
+    text-justify: distribute;
+}
+
+.video {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.Instagram-div {
+    padding: 25px;
+}
+
+.Facebook-div {
+    padding: 25px;
+}
+
+.Google-div {
+    padding: 25px;
+}
+
+.carousel-inner div img {
+    width: 60%;
+}
+
+/*Productos*/
+.encabezado-productos {
+    padding: 10px;
+}
+
+.encabezado-productos h1 {
+    font-family: 'Montserrat-encabezados';
+    justify-content: center;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: auto;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.producto button {
+    border: none;
+    background: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    cursor: pointer;
+
+}
+
+.comprar {
+    text-decoration: none;
+}
+
+/*Contacto*/
+.h1-contacto {
+    font-family: 'Montserrat-encabezados';
+    text-align: center;
+    padding: 10px;
+}
+
+.seccion-mapa {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "a a b"
+        "a a b";
+}
+
+.mapa {
+    grid-area: "b";
+    padding-left: 10px;
+    margin: 0;
+}
+
+.info-contacto {
+    grid-area: "a";
+    padding: 10px;
+    margin: 0;
+    font-family: 'Montserrat-parrafos';
+}
+
+/*Footer*/
+.footer {
+    background-color: white;
+}
+
+
+.Section-footer {
+    font-family: 'Montserrat-parrafos';
+    font-weight: bolder;
+    text-align: center;
+    text-justify: distribute;
+    padding-top: 15px;
+    border-top: 3px solid black;
+
+}
+
+.Section-footer-img {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.Section-footer-img div img {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    align-content: center;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 5%;
+
+}
+
+.whatsapp {
+    margin-left: 90%;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}
+
+/*Mobile*/
+@media only screen and (min-width:320px) and (max-width:500px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logo-nav {
+        width: 45%;
+        margin: 5%;
+    }
+
+    .Section-footer h5 {
+        font-size: medium;
+
+    }
+
+    .Section-footer p {
+        font-size: small;
+    }
+
+    .container-items {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-area: auto;
+    }
+
+    .seccion-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa {
+        margin: 5px;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-contacto {
+        text-align: center;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width:501px) and (max-width:992px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Logo-nav {
+        width: 45%;
+        margin: 5%;
+    }
+
+    .container-items {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-area: auto;
+    }
+
+    .seccion-mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa {
+        margin: 5px;
+        padding: 0;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-contacto {
+        text-align: center;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width:992px) {
+    .Logo-nav {
+        width: 70%;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collapse {
+        margin-left: 45%;
+    }
+
+    .Section-footer-img div img {
+        width: 30%;
+    }
+
+    .carousel-inner div img {
+        width: 60%;
+    }
+
+
+
+}
