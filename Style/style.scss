@@ -1,38 +1,472 @@
-/*FONTS*/
+/*Encabezados*/
 @font-face {
     font-family: 'Montserrat-encabezados';
     src: url(./Montserrat/Montserrat-BlackItalic.ttf);
 }
 
+/*Parrafos*/
 @font-face {
     font-family: 'Montserrat-parrafos';
     src: url(./Montserrat/Montserrat-Italic.ttf);
 }
 
-/*MAIN-GENERAL*/
 
-main {
-    background-color: #ff0000;
-    padding-top: 20px;
-    border-top: 3px solid black;
+/*INDEX*/
+.main-index {
+    background: rgb(204, 202, 202);
+    background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+    section {
+        h1 {
+            font-family: 'Montserrat-encabezados';
+            text-align: center;
+            text-justify: distribute;
+            text-size-adjust: 30px;
+            padding-top: 10px;
+        }
+
+        p {
+            font-family: 'Montserrat-parrafos';
+            font-weight: lighter;
+            font-size: large;
+            padding: 5px;
+            text-align: center;
+            text-justify: distribute;
+        }
+
+    }
+
+    .video {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .redes-sociales {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        margin: 15px;
+
+        .Instagram-div {
+            padding: 25px;
+        }
+
+        .Facebook-div {
+            padding: 25px;
+        }
+
+        .Google-div {
+            padding: 25px;
+        }
+    }
+
 }
 
-/*FOOTER*/
+/*PRODUCTOS*/
+.main-productos {
+    background: rgb(204, 202, 202);
+    background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+    .encabezado-productos {
+        padding: 10px;
+
+        h1 {
+            font-family: 'Montserrat-encabezados';
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+
+    .tienda {
+        .container-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-area: auto;
+            gap: 1rem;
+            padding: 10px;
+
+            .item {
+                border-radius: 10px;
+
+
+                figure {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px 10px 0 0;
+                        transition: all .5s;
+                    }
+                }
+
+                .producto {
+                    padding: 15px 30px;
+                    line-height: 2;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+
+                    .precio {
+                        font-size: 18px;
+                        font-weight: 900;
+                    }
+
+                    .comprar {
+                        a {
+                            background-color: black;
+                            padding: 10px;
+                            color: white;
+                            text-decoration: none;
+                        }
+
+                    }
+
+                }
+            }
+
+            .item:hover {
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+/*NOSOTROS*/
+.main-nosotros {
+    background: rgb(204, 202, 202);
+    background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+
+    section {
+        h1 {
+            font-family: 'Montserrat-encabezados';
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+
+    .info-nosotros {
+        p {
+            font-family: 'Montserrat-parrafos';
+            font-size: larger;
+            text-align: center;
+            font-weight: 500;
+            padding: 10px;
+        }
+    }
+}
+
+/*CONTACTO*/
+.main-contacto {
+    background: rgb(204, 202, 202);
+    background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+    display: inline-block;
+
+    section {
+        .h1-contacto {
+            font-family: 'Montserrat-encabezados';
+            text-align: center;
+            padding: 10px;
+        }
+
+    }
+
+    .seccion-mapa {
+        .mapa {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 10px;
+            float: left;
+        }
+
+        .info-contacto {
+            font-family: 'Montserrat-parrafos';
+            text-align: justify;
+            padding: 10px;
+        }
+    }
+
+    .formulario-contacto {
+        .contact_form {
+            width: 460px;
+            height: auto;
+            margin: 50px auto;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: red;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            background-color: rgb(204, 202, 202);
+            padding-left: 30px;
+
+            .formulario {
+                h1 {
+                    font-size: 39px;
+                    text-align: left;
+                    padding-bottom: 20px;
+                    color: black;
+
+                }
+
+                h3 {
+                    font-size: 16px;
+                    padding-bottom: 30px;
+                    color: #0e0e0e;
+                }
+
+                form {
+                    p {
+                        font-size: 14px;
+                        color: #0e0e0e;
+
+                        input {
+                            background-color: #fbfbfb;
+                            width: 408px;
+                            height: 40px;
+                            border-radius: 5px;
+                            border-style: solid;
+                            border-width: 1px;
+                            border-color: red;
+                            margin-top: 10px;
+                            padding-left: 10px;
+                            margin-bottom: 20px;
+
+                            :focus {
+                                outline: 0;
+                                border: 1px solid red;
+                            }
+                        }
+
+                        textarea {
+                            background-color: white;
+                            width: 405px;
+                            height: 150px;
+                            border-radius: 5px;
+                            border-style: solid;
+                            border-width: 1px;
+                            border-color: red;
+                            margin-top: 10px;
+                            padding-left: 10px;
+                            margin-bottom: 20px;
+                            padding-top: 15px;
+
+                            :focus {
+                                outline: 0;
+                                border: 1px solid black;
+                            }
+                        }
+
+                        label {
+                            display: block;
+                            float: center;
+                        }
+
+                        span {
+                            color: white;
+                        }
+
+                        .aviso {
+                            font-size: 13px;
+                            color: #0e0e0e;
+                        }
+
+                    }
+
+                    button {
+                        height: 45px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                        text-transform: uppercase;
+                        background-color: white;
+                        border-color: red;
+                        border-style: solid;
+                        border-radius: 10px;
+                        width: 420px;
+                        cursor: pointer;
+
+                        p {
+                            color: black;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .medios {
+        .medios-text {
+            h3 {
+                font-family: 'Montserrat-encabezados';
+                text-align: center;
+                padding-top: 15px;
+            }
+
+            p {
+                font-family: 'Montserrat-parrafos';
+                text-align: center;
+                padding: 5px;
+                font-weight: lighter;
+                font-size: larger;
+            }
+        }
+
+        .logos-contactos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .whatsapp {
+                padding: 15px;
+
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+
+                    }
+                }
+            }
+
+            .celular {
+                padding: 15px;
+
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+
+                    }
+                }
+            }
+
+            .telefono-fijo {
+                padding: 15px;
+
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/*SERVICIOS*/
+.main-servicios {
+    background: rgb(204, 202, 202);
+    background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+    section {
+        h1 {
+            font-family: 'Montserrat-encabezados';
+            padding: 25px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+    }
+
+    .servicios {
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .centradora {
+                margin: 5px;
+
+                img {
+                    width: 500px;
+                }
+
+                p {
+                    font-family: 'Montserrat-parrafos';
+                    padding: 10px;
+                    font-weight: 700;
+                }
+            }
+
+            .balanceadora {
+                margin: 5px;
+
+                img {
+                    width: 500px;
+                }
+
+                p {
+                    font-family: 'Montserrat-parrafos';
+                    padding: 10px;
+                    font-weight: 700;
+                }
+            }
+
+            .cubiertas {
+                margin: 5px;
+
+                img {
+                    width: 500px;
+                    height: 261.24px;
+                }
+
+                p {
+                    font-family: 'Montserrat-parrafos';
+                    padding: 10px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+/*Footer*/
 footer {
+    background-color: white;
+
+
     .Section-footer {
-        text-align: center;
-        text-justify: distribute;
-        padding-top: 15px;
+        padding-top: 5px;
         border-top: 3px solid black;
 
         h5 {
             font-family: 'Montserrat-encabezados';
-            font-weight: bolder;
+            text-align: center;
         }
 
         p {
             font-family: 'Montserrat-parrafos';
             font-weight: bolder;
+            text-align: center;
+            text-justify: distribute;
         }
     }
 
@@ -52,290 +486,479 @@ footer {
                 margin-left: 35%;
                 margin-top: 5%;
             }
-        }
 
+        }
     }
 }
 
-/*MAIN-INDEX*/
+/*MEDIA QUERIES*/
 
-.Main-index {
-    section {
-        .Encabezados-h1 {
-            font-family: 'Montserrat-encabezados';
-            text-align: center;
-            text-justify: distribute;
-            text-size-adjust: 30px;
+/*Mobile*/
+@media only screen and (min-width:320px) and (max-width:500px) {
 
-        }
-
-        .Parrafos {
-            font-family: 'Montserrat-parrafos';
-            text-align: center;
-            text-justify: distribute;
-        }
-
-    }
-
-    .video {
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-    }
-
-    section {
-        .redes-sociales {
+    /*HEADER*/
+    .navbar {
+        .container-fluid {
             display: flex;
-            flex-direction: row;
-            align-content: center;
+            flex-direction: column;
             justify-content: center;
-            margin: 15px;
+            align-items: center;
 
-            .Instagram-div {
-                padding: 25px;
+            .navbar-brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .Logo-nav {
+                    width: 45%;
+                    margin: 5%;
+                }
             }
 
-            .Facebook-div {
-                padding: 25px;
-            }
-
-            .Google-div {
-                padding: 25px;
-            }
         }
+
     }
-}
 
-/*PRODUCTOS*/
 
-.encabezado-productos {
-    font-family: 'Montserrat-encabezados';
-    text-align: center;
-}
+    /*SERVICIOS*/
+    .main-servicios {
+        .servicios {
+            div {
+                .centradora {
+                    img {
+                        width: 100%;
+                    }
+                }
 
-.section-productos {
-    .container-items {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-area: auto;
-        gap: 20px;
-        padding: 10px;
+                .balanceadora {
+                    img {
+                        width: 100%;
+                    }
+                }
 
-        .item {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px 10px 0 0;
-            transition: all .5s;
-            border-radius: 10px;
-
-            figure {
-                overflow: hidden;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    border-radius: 10px 10px 0 0;
-                    transition: all .5s;
+                .cubiertas {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
 
-        .item:hover {
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    }
 
-            img {
-                transform: scale(1.2);
+
+    /*FOOTER*/
+
+    footer {
+        .Section-footer {
+            h5 {
+                font-size: medium;
+            }
+
+            p {
+                font-size: small;
+            }
+        }
+    }
+
+
+    /*CONTACTOS*/
+    .main-contacto {
+        width: 320px;
+        height: auto;
+        .seccion-mapa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            width: 320px;
+
+            .mapa {
+                display: none;
+        
+            }
+
+            .info-contacto {
+                text-align: center;
+            }
+            
+        }
+
+        .medios {
+            display: none;
+            .logos-contactos {
+                padding: 0%;
+                a {
+                    img {
+                        width: 50%;
+
+                    }
+                }
+            }
+        }
+        .formulario-contacto {
+            width: 320px;
+        .contact_form {
+            width: 320px;
+            height: auto;
+            margin:0;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: red;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            background-color: rgb(204, 202, 202);
+            padding-left: 30px;
+
+            .formulario {
+                h1 {
+                    font-size: 39px;
+                    text-align: left;
+                    padding-bottom: 20px;
+                    color: black;
+
+                }
+
+                h3 {
+                    font-size: 16px;
+                    padding-bottom: 30px;
+                    color: #0e0e0e;
+                }
+
+                form {
+                    p {
+                        font-size: 14px;
+                        color: #0e0e0e;
+
+                        input {
+                            background-color: #fbfbfb;
+                            width: 268px;
+                            height: 40px;
+                            border-radius: 5px;
+                            border-style: solid;
+                            border-width: 1px;
+                            border-color: red;
+                            margin-top: 10px;
+                            padding-left: 10px;
+                            margin-bottom: 20px;
+
+                            :focus {
+                                outline: 0;
+                                border: 1px solid red;
+                            }
+                        }
+
+                        textarea {
+                            background-color: white;
+                            width: 268px;
+                            height: 150px;
+                            border-radius: 5px;
+                            border-style: solid;
+                            border-width: 1px;
+                            border-color: red;
+                            margin-top: 10px;
+                            padding-left: 10px;
+                            margin-bottom: 20px;
+                            padding-top: 15px;
+
+                            :focus {
+                                outline: 0;
+                                border: 1px solid black;
+                            }
+                        }
+
+                        label {
+                            display: block;
+                            float: center;
+                        }
+
+                        span {
+                            color: white;
+                        }
+
+                        .aviso {
+                            font-size: 13px;
+                            color: #0e0e0e;
+                        }
+
+                    }
+
+                    button {
+                        height: 45px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                        text-transform: uppercase;
+                        background-color: white;
+                        border-color: red;
+                        border-style: solid;
+                        border-radius: 10px;
+                        width: 268px;
+                        cursor: pointer;
+
+                        p {
+                            color: black;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+        }
+    }
+
+
+
+
+
+
+
+    /*PRODUCTOS*/
+    .main-productos {
+        background: rgb(204, 202, 202);
+        background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+        .encabezado-productos {
+            padding: 10px;
+
+            h1 {
+                font-family: 'Montserrat-encabezados';
+                text-align: center;
+                padding-top: 10px;
             }
         }
 
-        .producto {
-            font-size: 18px;
-            font-weight: 900;
-            position: relative;
+        .tienda {
+            .container-items {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 1em;
+                max-width: 70rem;
 
+                .item {
+                    border-radius: 10px;
+
+
+                    figure {
+                        overflow: hidden;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px 10px 0 0;
+                            transition: all .5s;
+                        }
+                    }
+
+                    .producto {
+                        padding: 15px 30px;
+                        line-height: 2;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        justify-content: center;
+                        align-items: center;
+
+                        .precio {
+                            font-size: 18px;
+                            font-weight: 900;
+                        }
+
+                        .comprar {
+                            a {
+                                background-color: black;
+                                padding: 10px;
+                                color: white;
+                                text-decoration: none;
+                            }
+
+                        }
+
+                    }
+                }
+
+                .item:hover {
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
 
-        .comprar {
-            background-color: black;
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-
-        }
-    }
-}
-
-
-/*CONTACTO*/
-
-main {
-    section {
-        .h1-contacto {
-            font-family: 'Montserrat-encabezados';
-            text-align: center;
-            padding: 10px;
-        }
     }
 
-    .seccion-mapa {
-        .mapa {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            margin: 10px;
-            float: left;
-        }
-
-        .info-contacto {
-            font-family: 'Montserrat-parrafos';
-            text-align: justify;
-        }
-    }
-
-}
-
-/*NOSOTROS*/
-
-main {
-    section {
-        h1 {
-            font-family: 'Montserrat-encabezados';
-            text-align: center;
-            margin: 10px;
-        }
-    }
-
-    .info-nosotros {
-        p {
-            font-family: 'Montserrat-parrafos';
-            text-align: justify;
-            margin-bottom: 5px;
-            font-weight: bolder;
-        }
-    }
-}
-
-/*MEDIA QUERY*/
-
-/*Mobile*/
-@media only screen and (min-width:320px) and (max-width:500px) {
-    .container-fluid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .navbar-brand {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .Logo-nav {
-        width: 45%;
-        margin: 5%;
-    }
-
-    .Section-footer h5 {
-        font-size: medium;
-
-    }
-
-    .Section-footer p {
-        font-size: small;
-    }
-
-    .container-items {
-        display: grid;
-        grid-auto-flow: column;
-        gap: 0;
-    }
-
-    .mapa {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 95%;
-    }
-
-    .info-contacto {
-        text-align: center;
-    }
-
-}
 
 /*Tablet*/
 @media only screen and (min-width:501px) and (max-width:992px) {
-    .container-fluid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+    /*HEADER*/
+    header {
+        .navbar {
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .navbar-brand {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .Logo-nav {
+                    width: 45%;
+                    margin: 5%;
+                }
+            }
+        }
+
     }
 
-    .navbar-brand {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    /*CONTACTO*/
+    .main-contacto {
+        .seccion-mapa {
+            display: flex;
+            flex-direction: column;
+
+            .mapa {
+                display: flex;
+                margin: 5px;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .info-contacto {
+                text-align: center;
+            }
+        }
+
     }
 
-    .Logo-nav {
-        width: 45%;
-        margin: 5%;
+    /*PRODUCTOS*/
+    .main-productos {
+        background: rgb(204, 202, 202);
+        background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+
+        .encabezado-productos {
+            padding: 10px;
+
+            h1 {
+                font-family: 'Montserrat-encabezados';
+                text-align: center;
+                padding-top: 10px;
+            }
+        }
+
+        .tienda {
+            .container-items {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+                padding: 1em;
+                max-width: 70rem;
+
+                .item {
+                    border-radius: 10px;
+
+
+                    figure {
+                        overflow: hidden;
+
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 10px 10px 0 0;
+                            transition: all .5s;
+                        }
+                    }
+
+                    .producto {
+                        padding: 15px 30px;
+                        line-height: 2;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        justify-content: center;
+                        align-items: center;
+
+                        .precio {
+                            font-size: 18px;
+                            font-weight: 900;
+                        }
+
+                        .comprar {
+                            a {
+                                background-color: black;
+                                padding: 10px;
+                                color: white;
+                                text-decoration: none;
+                            }
+
+                        }
+
+                    }
+                }
+
+                .item:hover {
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+
     }
-
-    .container-items {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-area: auto;
-
-    }
-
-    .mapa {
-        display: flex;
-        margin: 5px;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .info-contacto {
-        text-align: justify;
-    }
-
 }
+
+
 
 /*Desktop*/
 @media only screen and (min-width:992px) {
-    .Logo-nav {
-        width: 70%;
+
+    /*HEADER*/
+    .navbar {
+        .container-fluid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .navbar-brand {
+                .Logo-nav {
+                    width: 70%;
+                }
+            }
+
+            .collapse {
+                margin-left: 45%;
+            }
+        }
     }
 
-    .container-fluid {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    /*FOOTER*/
+    footer {
+        .Section-footer-img {
+            div {
+                img {
+                    width: 30%;
+                }
+            }
+        }
     }
-
-    .collapse {
-        margin-left: 45%;
-    }
-
-    .Section-footer-img div img {
-        width: 30%;
-    }
-
-    .carousel-inner div img {
-        width: 60%;
-    }
-
 
 
 }
