@@ -55,7 +55,7 @@
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.48630115749!2d-64.20860762567254!3d-31.428276496823855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2654f07e45f%3A0x5376b22775f67e00!2sJulio%20A.%20Roca%20987%2C%20X5000CQG%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1686275336036!5m2!1ses-419!2sar"
-                    width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="310" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <p class="info-contacto">
@@ -122,55 +122,44 @@
 
         </section>
         <section class="formulario-contacto">
-            <div class="contact_form">
-
-                <div class="formulario">
-                    <h1>Consultas</h1>
-                    <h3>Escribinos y en breve responderemos tu consulta.</h3>
-
-
-                    <form action="https://formsubmit.co/gonzalotomasceballos@gmail.com " method="post">
-
-
-                        <p>
-                            <label for="nombre" class="name">Nombre
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <input type="text" name="Nombre" id="nombre" required="obligatorio" placeholder="Nombre">
-                        </p>
-
-                        <p>
-                            <label for="email" class="email">Email
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <input type="email" name="Email" id="email" required="obligatorio"
-                                placeholder="Escribí tu Email">
-                        </p>
-
-                        <p>
-                            <label for="telefone" class="Telefono">Teléfono
-                            </label>
-                            <input type="tel" name="introducir_telefono" id="telefono"
-                                placeholder="Escribí tu teléfono">
-                        </p>
-
-                        <p>
-                            <label for="mensaje" class="Consulta">Consulta
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <textarea name="Mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-                                placeholder="Dejanos tu consulta"></textarea>
-                        </p>
-
-                        <button type="submit" name="enviar_formulario" id="enviar">
-                            <p>Enviar</p>
-                        </button>
-
-                        <p class="aviso">
-                            <span class="obligatorio"> * </span>los campos son obligatorios.
-                        </p>
-
-                    </form>
+            <div class="contenedor">
+                <h2 class="logo"><span class="nombre-empresa">Dejanos tu consulta.</span> </h2>
+                <div class="wrapper animated bounceInLeft">
+                    <div class="info-empresa">
+                        <h3>Güemes Neumáticos y Servicios.</h3>
+                        <ul class="servicios">
+                            <li><i class="fa fa-map-marker"></i>Julio A. Roca 987. Cordoba, Argentina.</li>
+                            <li><i class="fa fa-mobile"></i>Tel.: 555 555 000</li>
+                        </ul>
+                    </div>
+                    <div class="contacto">
+                        <h3>Enviar Correo</h3>
+                        <form action="https://formsubmit.co/tallerguemes@gmail.com" method="POST" class="formulario">
+                            <p>
+                                <label>Nombre</label>
+                                <input type="text" name="nombre" required>
+                            </p>
+                            <p>
+                                <label>Apellido</label>
+                                <input type="text" name="apellido">
+                            </p>
+                            <p>
+                                <label>Correo</label>
+                                <input type="email" name="email" required>
+                            </p>
+                            <p>
+                                <label>Teléfono</label>
+                                <input type="text" name="teléfono" required>
+                            </p>
+                            <p class="full">
+                                <label>Consulta</label>
+                                <textarea name="mensaje" required></textarea>
+                            </p>
+                            <p class="full">
+                                <button class="boton-enviar">Enviar</button>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
