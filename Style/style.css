@@ -8,6 +8,11 @@
   font-family: "Montserrat-parrafos";
   src: url(./Montserrat/Montserrat-Italic.ttf);
 }
+/*HEADER*/
+header .navbar .container-fluid .collapse ul li {
+  font-family: "Montserrat-parrafos";
+}
+
 /*INDEX*/
 .main-index {
   background: rgb(204, 202, 202);
@@ -194,7 +199,7 @@
   height: 100px;
 }
 .main-contacto .formulario-contacto {
-  padding-top: 10px;
+  padding-top: 25px;
 }
 .main-contacto .formulario-contacto *,
 .main-contacto .formulario-contacto *::before,

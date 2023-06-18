@@ -11,6 +11,23 @@
 }
 
 
+/*HEADER*/
+header{
+    .navbar{
+        .container-fluid{
+            .collapse{
+                ul{
+                    li{
+                        font-family: 'Montserrat-parrafos';
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
 /*INDEX*/
 .main-index {
     background: rgb(204, 202, 202);
@@ -279,7 +296,7 @@
             padding: 0;
         }
 
-        padding-top: 10px;
+        padding-top: 25px;
 
         .contenedor {
             max-width: 1170px;
