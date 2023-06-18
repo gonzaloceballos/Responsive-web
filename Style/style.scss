@@ -278,6 +278,7 @@
             margin: 0;
             padding: 0;
         }
+
         padding-top: 10px;
 
         .contenedor {
@@ -396,6 +397,7 @@
 .main-servicios {
     background: rgb(204, 202, 202);
     background: radial-gradient(circle, rgba(204, 202, 202, 1) 0%, rgba(224, 16, 16, 1) 100%);
+    padding-bottom: 10px;
 
     section {
         h1 {
@@ -408,53 +410,21 @@
     }
 
     .servicios {
-        div {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            .centradora {
-                margin: 5px;
-
-                img {
-                    width: 500px;
-                }
-
-                p {
-                    font-family: 'Montserrat-parrafos';
-                    padding: 10px;
-                    font-weight: 700;
-                }
-            }
-
-            .balanceadora {
-                margin: 5px;
-
-                img {
-                    width: 500px;
-                }
-
-                p {
-                    font-family: 'Montserrat-parrafos';
-                    padding: 10px;
-                    font-weight: 700;
-                }
-            }
-
-            .cubiertas {
-                margin: 5px;
-
-                img {
-                    width: 500px;
-                    height: 261.24px;
-                }
-
-                p {
-                    font-family: 'Montserrat-parrafos';
-                    padding: 10px;
-                    font-weight: 700;
+        .row{
+            width: 100%;
+            padding-left: 25px;
+            .col{
+                .card{
+                    background-color: rgb(204, 202, 202);
+                    .card-body{
+                        .card-title{
+                            font-family: 'Montserrat-encabezados';
+                            
+                        }
+                        .card-text{
+                                font-family: 'Montserrat-parrafos';
+                            }
+                    }
                 }
             }
         }
@@ -580,15 +550,15 @@ footer {
         .seccion-mapa {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            
 
             .mapa {
                 margin: 5px;
-                padding: 0;
+                padding-left: 28px;
                 width: auto;
                 display: flex;
                 flex-direction: column;
+                
 
             }
 
@@ -603,7 +573,7 @@ footer {
             justify-content: center;
 
             .logos-contactos {
-                
+
 
                 .whatsapp {
                     padding: 5px;

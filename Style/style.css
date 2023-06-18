@@ -300,6 +300,7 @@
 .main-servicios {
   background: rgb(204, 202, 202);
   background: radial-gradient(circle, rgb(204, 202, 202) 0%, rgb(224, 16, 16) 100%);
+  padding-bottom: 10px;
 }
 .main-servicios section h1 {
   font-family: "Montserrat-encabezados";
@@ -307,46 +308,18 @@
   text-align: center;
   font-weight: bolder;
 }
-.main-servicios .servicios div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.main-servicios .servicios .row {
+  width: 100%;
+  padding-left: 25px;
 }
-.main-servicios .servicios div .centradora {
-  margin: 5px;
+.main-servicios .servicios .row .col .card {
+  background-color: rgb(204, 202, 202);
 }
-.main-servicios .servicios div .centradora img {
-  width: 500px;
+.main-servicios .servicios .row .col .card .card-body .card-title {
+  font-family: "Montserrat-encabezados";
 }
-.main-servicios .servicios div .centradora p {
+.main-servicios .servicios .row .col .card .card-body .card-text {
   font-family: "Montserrat-parrafos";
-  padding: 10px;
-  font-weight: 700;
-}
-.main-servicios .servicios div .balanceadora {
-  margin: 5px;
-}
-.main-servicios .servicios div .balanceadora img {
-  width: 500px;
-}
-.main-servicios .servicios div .balanceadora p {
-  font-family: "Montserrat-parrafos";
-  padding: 10px;
-  font-weight: 700;
-}
-.main-servicios .servicios div .cubiertas {
-  margin: 5px;
-}
-.main-servicios .servicios div .cubiertas img {
-  width: 500px;
-  height: 261.24px;
-}
-.main-servicios .servicios div .cubiertas p {
-  font-family: "Montserrat-parrafos";
-  padding: 10px;
-  font-weight: 700;
 }
 
 /*Footer*/
@@ -423,12 +396,10 @@ footer .Section-footer-img div img {
   .main-contacto .seccion-mapa {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
   }
   .main-contacto .seccion-mapa .mapa {
     margin: 5px;
-    padding: 0;
+    padding-left: 28px;
     width: auto;
     display: flex;
     flex-direction: column;
